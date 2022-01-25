@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url(../header/style-header.css);
+@import url(../index/index.css);
+$dark-color : #161616;
+$white-color: #f1f1f1;
+$pink : #e63e6f;
+$font : "Lato", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: $dark-color;
+    height: 200vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width:100%;
+    padding: 0 10px 0 10px;
+    margin : 50px 0 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.img-medium  {
+    width:300px;
+}
+
+.img-animed{
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    & img {
+        transition:all 0.3s ease-out
+    }
+    &:hover {
+        transform:scale(0.95);
+        & img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    border-left: 3px solid $pink;
+    padding-left:5px;
+}
+
+@media screen and (max-width:576px) {
+    img-animed {
+        width:50%;
+        & img {
+            width:50%;
+        }
+    }
+}

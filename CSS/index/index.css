@@ -1,0 +1,25 @@
+.concept {
+  color: #f1f1f1;
+  font-family: "Lato", sans-serif;
+  transition: all 0.3s;
+  width: 50%;
+  margin: 30px 0;
+}
+.concept p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .img-animed {
+    width: 50%;
+    min-width: 290px;
+  }
+  .img-animed img {
+    width: 100%;
+  }
+
+  .concept {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */

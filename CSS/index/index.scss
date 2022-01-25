@@ -1,0 +1,31 @@
+$font :"Lato", sans-serif;
+$dark-color : #161616;
+$white-color: #f1f1f1;
+$pink : #e63e6f;
+
+.concept {
+    color: $white-color;
+    font-family: $font;
+    transition: all 0.3s;
+    width:50%;
+    margin:30px 0 ;
+    & p {
+        margin:15px 0;
+        font-size: 1.1rem;;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .img-animed {
+        width:50%;
+        min-width: 290px;
+        & img {
+            width:100%;
+        }
+    }
+
+    .concept {
+        width:100%;
+    }
+    
+}
