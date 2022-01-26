@@ -13,7 +13,6 @@ $pink : #e63e6f;
 header {
     width:100%;
     display:flex;
-
     flex-direction: column;
     font-family: $font;
     
@@ -31,7 +30,7 @@ header {
 h1 {
     font-size: 3em;
     transition: all 0.5s;
-}
+    }
 
 .subtitle {
     color:$pink;
@@ -146,7 +145,7 @@ nav {
 
 /* 
 
----------------Responsive
+---------------Responsive---------
 
  */
 
@@ -179,6 +178,9 @@ nav {
         }
     }
 
+    .header-top {
+        box-shadow: 0 0 2px $pink;
+    }
     .with-menu nav {
         visibility: visible;
         opacity:1;

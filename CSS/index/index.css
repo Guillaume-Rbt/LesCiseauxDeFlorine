@@ -4,10 +4,40 @@
   transition: all 0.3s;
   width: 50%;
   margin: 30px 0;
+  position: relative;
 }
 .concept p {
   margin: 15px 0;
   font-size: 1.1rem;
+}
+
+.card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.card {
+  width: 270px;
+  height: 263px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  box-shadow: 0 0 1px #f1f1f1;
+}
+.card p {
+  text-align: center;
+  margin-top: 10px;
+}
+.card .iconify {
+  margin-bottom: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 @media screen and (max-width: 576px) {

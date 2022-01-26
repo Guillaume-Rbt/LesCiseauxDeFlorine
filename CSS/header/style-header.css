@@ -120,7 +120,7 @@ nav .menu .active {
 
 /* 
 
----------------Responsive
+---------------Responsive---------
 
  */
 @media screen and (max-width: 576px) {
@@ -149,6 +149,10 @@ nav .menu .active {
   nav .menu .nav-item {
     height: 40px;
     margin: 20px 0;
+  }
+
+  .header-top {
+    box-shadow: 0 0 2px #e63e6f;
   }
 
   .with-menu nav {
