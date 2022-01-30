@@ -3,16 +3,20 @@ $dark-color : #161616;
 $white-color: #f1f1f1;
 $pink : #e63e6f;
 
+
 .concept {
     color: $white-color;
     font-family: $font;
     transition: all 0.3s;
     width:50%;
-    margin:30px 0 ;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     & p {
         margin:15px 0;
-        font-size: 1.1rem;;
+        font-size: 1.1rem;
+        min-width:100%;
     }
 }
 
@@ -33,7 +37,7 @@ $pink : #e63e6f;
     align-items: center;
     justify-content: space-around;
     padding: 15px;
-    box-shadow: 0 0 1px $white-color;
+    border : 1px solid $white-color; 
 
     & p {
         text-align: center;
@@ -47,17 +51,30 @@ $pink : #e63e6f;
     }
 }
 
-@media screen and (max-width:576px) {
-    .img-animed {
-        width:50%;
-        min-width: 290px;
-        & img {
-            width:100%;
-        }
+.zone {
+    width:50%;
+    & p {
+        font-size: 1.1rem;
+        margin: 15px 0;
     }
+}
 
-    .concept {
+
+/* 
+
+---------------Responsive---------
+
+ */
+
+@media screen and (max-width:647px) {
+    .concept, .zone  {
         width:100%;
+        margin:25px 0;
     }
-    
+}
+
+@media screen and (max-width:576px) {
+    .card {
+        width:80%;
+    }
 }

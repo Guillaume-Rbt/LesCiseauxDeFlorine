@@ -12,6 +12,7 @@ function nav_item (string $lien, string $titre) : string
 html;  
 }
 
+
 function menu () {
     return
      nav_item('index.php', 'Accueil').

@@ -3,12 +3,15 @@
   font-family: "Lato", sans-serif;
   transition: all 0.3s;
   width: 50%;
-  margin: 30px 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .concept p {
   margin: 15px 0;
   font-size: 1.1rem;
+  min-width: 100%;
 }
 
 .card-wrapper {
@@ -28,7 +31,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 15px;
-  box-shadow: 0 0 1px #f1f1f1;
+  border: 1px solid #f1f1f1;
 }
 .card p {
   text-align: center;
@@ -40,16 +43,27 @@
   height: 25px;
 }
 
-@media screen and (max-width: 576px) {
-  .img-animed {
-    width: 50%;
-    min-width: 290px;
-  }
-  .img-animed img {
-    width: 100%;
-  }
+.zone {
+  width: 50%;
+}
+.zone p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
 
-  .concept {
+/* 
+
+---------------Responsive---------
+
+ */
+@media screen and (max-width: 647px) {
+  .concept, .zone {
     width: 100%;
+    margin: 25px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 80%;
   }
 }/*# sourceMappingURL=index.css.map */

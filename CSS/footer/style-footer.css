@@ -1,0 +1,35 @@
+footer {
+  background: #e63e6f;
+  font-family: "Lato", sans-serif;
+  color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.mentions_obligatoires h4 {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 0.9em;
+  margin: 0 0 3px 0;
+}
+.mentions_obligatoires p {
+  font-size: 0.8em;
+}
+
+.reseaux {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.reseaux .icon-reseaux {
+  display: flex;
+  gap: 15px;
+}
+.reseaux .icon-reseaux .iconify {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style-footer.css.map */

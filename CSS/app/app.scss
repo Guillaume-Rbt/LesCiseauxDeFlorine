@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url(../header/style-header.css);
 @import url(../index/index.css);
+@import url(../footer/style-footer.css);
 $dark-color : #161616;
 $white-color: #f1f1f1;
 $pink : #e63e6f;
 $font : "Lato", sans-serif;
+
 
 * {
     margin: 0;
@@ -28,9 +30,10 @@ a {
 .container {
     width:100%;
     padding: 0 10px 0 10px;
-    margin : 50px 0 50px 0;
+    margin : 70px 0 70px 0;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap:10px;
     font-family: $font;
@@ -78,11 +81,20 @@ h2 {
     }
 }
 
+
+/* 
+
+---------------Responsive---------
+
+ */
+
+
 @media screen and (max-width:576px) {
-    img-animed {
+    .img-animed {
         width:50%;
+        min-width: 300px;
         & img {
-            width:50%;
+            width:100%;
         }
     }
 }
